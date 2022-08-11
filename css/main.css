@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('../images/vazifa.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+
+}
+.box{
+  width: 60px;
+  height: 60px;
+  background-color: aqua;
+  margin-top: 75px;
+  margin-left: 65px;
+  border-radius: 8px;
+  animation-name: gocenter;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; 
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes gocenter {
+  0%{
+    transform: translateX(0px);
+  }
+  10%{
+    transform: translateX(280px);
+    background-color: dodgerblue;
+  }
+  20%{
+    transform: translateX(300px) translateY(300px);
+    background-color: blue;
+  }
+  30%{
+    transform: translateY(300px) translateX(950px);
+    background-color: black;
+  }
+  40%{
+    transform:  translateX(950px) translateY(440px);
+    background-color:brown ;
+  }
+  50%{
+    transform: translateY(440px) translateX(560px);
+    background-color: gold;
+    border-radius: 50%;
+  }
+  60%{
+    transform: translateX(560px) translateY(390px);
+    background-color: yellow;
+  }
+  70%{
+    transform: translateY(390px) translateX(280px);
+    background-color: yellowgreen;
+  }
+  80%{
+    transform: translateX(120px) translateY(260px);
+    background-color: greenyellow;
+  }
+  90%{
+    transform: translateX(0px) translateY(290px);
+    background-color: green;
+  }
+  100%{
+    transform: translateX(0px) translateY(0px);
+  }
+}
